@@ -1,0 +1,41 @@
+// icon base setting
+%icon-base {
+    background-size: contain;
+    background-repeat: no-repeat; 
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+// close 
+.icon-close {
+    @extend %icon-base;
+    background-image: url("../../assets/img/icons/close.svg");
+    width: 25px;
+    height: 25px;
+    &--white {
+        background-image: url("../../assets/img/icons/close-white.svg");
+    }
+    &--lg {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+
+// carets 
+.icon-caret-up {
+    @extend %icon-base;
+    @include caret(up);
+}
+
+.icon-caret-down {
+    @extend %icon-base;
+    @include caret(down);
+}
+
+.icon-caret-right {
+    @extend %icon-base;
+    @include caret(right);
+}

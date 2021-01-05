@@ -1,0 +1,53 @@
+// General class and placeholders helpers
+
+.box {
+    padding: 1rem;
+    background-color: $blue-dark;
+    border-radius: 0.3rem;
+
+    & + .box {
+        margin-top: 2rem;
+    }
+}
+
+.hero {
+    background-image: url("./../../assets/img/ocean-sunset.jpg");
+    background-size: cover;
+    background-position: 0rem -10rem;
+    background-repeat: no-repeat;
+    padding-bottom: 20rem;
+    position: relative;
+    overflow: hidden;
+    display: none;
+
+    &__shadow {
+        width: 120%;
+        height: 3rem;
+        background: $black;
+        position: absolute;
+        bottom: -1rem;
+        left: -1rem;
+        filter: blur(1.7rem);
+    }
+
+    @include breakpoint(md) {
+        display: block;
+    }
+}
+
+.logo {
+    width: 10rem;
+}
+
+.profile-pic {
+    width: 8rem;
+    border-radius: 0.3rem;
+    border: 1px solid $gray-3;
+    overflow: hidden;
+    box-shadow: 0px 0px 1rem $black-transparency;
+    margin-bottom: 2rem;
+
+    &__image {
+        width: 100%;
+    }
+}

@@ -1,0 +1,19 @@
+@import './../../styles/utilities/mixins';
+@import '../../styles/utilities/settings';
+
+.profile {
+  margin: 3rem;
+  
+  @include breakpoint(md) {
+    margin-left: 20rem;
+    margin-top: -3.5rem;
+  }
+  
+  @include breakpoint(lg) {
+    margin-left: 22rem;
+  }
+
+  @include breakpoint(xl) {
+    margin-left: 30rem;
+  }
+}
